@@ -1,0 +1,110 @@
+[
+  {
+    "id": "#1001",
+    "title": "Fix Login Authentication Bug",
+    "description": "Users are unable to log in using their Google accounts.",
+    "customer": "John Smith",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "1/17/2024"
+  },
+  {
+    "id": "#1002",
+    "title": "Redesign Dashboard UI",
+    "description": "Update the dashboard layout to improve user experience and responsiveness.",
+    "customer": "Emma Johnson",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "1/22/2024"
+  },
+  {
+    "id": "#1003",
+    "title": "Add Dark Mode Support",
+    "description": "Implement a theme switcher and dark mode across the application.",
+    "customer": "Michael Brown",
+    "priority": "LOW PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2/5/2024"
+  },
+  {
+    "id": "#1004",
+    "title": "Optimize Database Queries",
+    "description": "Reduce API response time by optimizing slow SQL queries.",
+    "customer": "Sophia Davis",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2/14/2024"
+  },
+  {
+    "id": "#1005",
+    "title": "Email Notification Failure",
+    "description": "Transactional emails are not being delivered to customers.",
+    "customer": "William Wilson",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "3/1/2024"
+  },
+  {
+    "id": "#1006",
+    "title": "Implement Search Functionality",
+    "description": "Add advanced filtering and search capabilities to the product page.",
+    "customer": "Olivia Taylor",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "3/12/2024"
+  },
+  {
+    "id": "#1007",
+    "title": "Mobile Layout Fixes",
+    "description": "Resolve alignment issues on smaller screen sizes.",
+    "customer": "James Anderson",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "4/3/2024"
+  },
+  {
+    "id": "#1008",
+    "title": "Payment Gateway Integration",
+    "description": "Integrate Stripe payment processing into the checkout flow.",
+    "customer": "Ava Martinez",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "4/18/2024"
+  },
+  {
+    "id": "#1009",
+    "title": "User Activity Logs",
+    "description": "Track and display user actions for auditing purposes.",
+    "customer": "Benjamin Thomas",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "5/7/2024"
+  },
+  {
+    "id": "#1010",
+    "title": "API Documentation Update",
+    "description": "Revise API documentation to reflect recent endpoint changes.",
+    "customer": "Charlotte White",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "5/19/2024"
+  },
+  {
+    "id": "#1011",
+    "title": "Profile Image Upload Issue",
+    "description": "Users receive an error when uploading profile pictures.",
+    "customer": "Daniel Harris",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "6/2/2024"
+  },
+  {
+    "id": "#1012",
+    "title": "Generate Monthly Reports",
+    "description": "Automate the creation and export of monthly performance reports.",
+    "customer": "Mia Clark",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "6/15/2024"
+  }
+]
