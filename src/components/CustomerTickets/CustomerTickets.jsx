@@ -1,4 +1,4 @@
-import { use } from "react";
+import { use, useState } from "react";
 import Ticket from "../Ticket/Ticket";
 import TaskStatus from "../TaskStatus/TaskStatus";
 import ResolvedTask from "../ResolvedTask/ResolvedTask";
@@ -11,9 +11,24 @@ const CustomerTickets = ({
   taskTitles,
   cardDisabled,
 }) => {
-  const tickets = use(ticketsPromise);
+  const loadTickets = use(ticketsPromise);
+  const [updateTasksList, setUpdateTasksList] = useState([]);
+  const [removeTitles, setRemoveTitles] = useState([]);
+  const removeTaskList = (title) => {
+    setRemoveTitles((prev) => [...prev, title]);
+    const updateTask = updateTasksList.filter(
+      (ticket) => ticket.title !== title,
+    );
+    setUpdateTasksList(updateTask);
+  };
+  const tickets = loadTickets.filter(
+    (ticket) => !removeTitles.includes(ticket.title),
+  );
 
-  console.log(addToTaskStatusTickets);
+  // const updateTickets = tickets.filter(ticket => ticket.title !== taskTitles);
+
+  // console.log(updateTickets);
+
   return (
     <div className="flex flex-col md:flex-row gap-2 max-w-[95%] mx-auto">
       <div className=" basis-9/12">
@@ -38,11 +53,10 @@ const CustomerTickets = ({
               key={task.id}
               task={task}
               handleCompleteTask={handleCompleteTask}
+              removeTaskList={removeTaskList}
             ></TaskStatus>
           ))}
-          {/* <TaskStatus
-            addToTaskStatusTickets={addToTaskStatusTickets}
-          ></TaskStatus> */}
+
           <ResolvedTask taskTitles={taskTitles}></ResolvedTask>
         </div>
       </div>

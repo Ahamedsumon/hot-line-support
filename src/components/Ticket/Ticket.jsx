@@ -26,7 +26,7 @@ const Ticket = ({ ticket, handleTicketsClick, cardDisabled }) => {
         <div className="flex gap-2">
           <p className="text-[#627382]">{id}</p>
           <p
-            className={`${priority === "HIGH PRIORITY" ? "text-[#F83044]" : "text-yellow-400"}`}
+            className={`${priority === "HIGH PRIORITY" ? "text-[#F83044]" : priority === "MEDIUM PRIORITY" ? "text-yellow-400" : "text-[#02A53B]"}`}
           >
             {priority}
           </p>

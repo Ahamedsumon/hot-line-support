@@ -15,6 +15,7 @@ function App() {
   const [resolvedCount, setResolvedCount] = useState(0);
   const [taskTitles, setTaskTitles] = useState([]);
   const [cardDisabled, setCardDisabled] = useState(false);
+
   const handleTicketsClick = (ticket) => {
     const newTicket = [...addToTaskStatusTickets, ticket];
     setaddToTaskStatusTickets(newTicket);
@@ -31,8 +32,8 @@ function App() {
     setTaskTitles(addNewTitle);
     setResolvedCount((prev) => prev + 1);
     toast("Task Successfully Completed!!");
-    console.log("Task completed");
   };
+
   return (
     <>
       <Header></Header>
